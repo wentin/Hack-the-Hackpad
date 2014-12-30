@@ -18,3 +18,18 @@ $(function(){
         }
     }); 
 })
+
+
+
+$(window).on('scroll', function(event) {
+ 
+    /*********** avoid fix above issue on chrome, only run when it is not firefox *****/
+    if ($(window).scrollTop() > 0) {
+        $('.logo').addClass('collapse');
+    } else {
+        $('.logo').removeClass('collapse');
+    }           
+    
+
+    
+});

@@ -94,12 +94,37 @@ header {
   height: 60px;
   border-top: solid 4px #1DD3B0;
   border-bottom: solid 1px rgba(33, 33, 33, 0.4);
-  position: absolute;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 1; }
   header .logo {
     position: absolute;
     top: 21px;
-    left: 40px; }
+    left: 40px;
+    overflow: hidden;
+    width: 325px;
+    transition: all 0.5s; }
+    header .logo #bg {
+      transition: all 0.5s; }
+    header .logo #Hd {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      transition: all 0.5s; }
+    header .logo #ackthe {
+      opacity: 1;
+      transition: all 0.5s; }
+    header .logo #ackpad {
+      opacity: 1;
+      transition: all 0.5s; }
+    header .logo.collapse, header .logo:hover {
+      width: 83px; }
+      header .logo.collapse #Hd, header .logo:hover #Hd {
+        -webkit-transform: translate(-143px, 0);
+        transform: translate(-143px, 0); }
+      header .logo.collapse #ackthe, header .logo:hover #ackthe {
+        opacity: 0; }
+      header .logo.collapse #ackpad, header .logo:hover #ackpad {
+        opacity: 0; }
   header .menu {
     font-family: "Fira Sans";
     font-weight: 300;
@@ -132,7 +157,7 @@ h1 {
   line-height: 60px;
   text-align: center;
   height: 100vh;
-  padding-top: 40vh;
+  padding-top: 38.2vh;
   margin-bottom: 100px;
   box-sizing: border-box;
   position: relative; }
@@ -164,7 +189,8 @@ p strong {
   font-size: 32px;
   line-height: 40px;
   display: block;
-  padding: 16px 0; }
+  padding: 16px 0;
+  letter-spacing: -0.8px; }
 
 /********** Heading 3 ***********/
 ul.noindent {
@@ -205,10 +231,8 @@ ol {
       font-size: 20px;
       line-height: 36px;
       position: absolute;
-      width: 24px;
       height: 100%;
-      left: 0px;
-      text-align: center; }
+      left: 0px; }
 
 ul.comment {
   position: relative;
@@ -274,7 +298,7 @@ ul.code {
     counter-increment: code-number-counter;
     list-style: none;
     padding-left: 50px;
-    background-color: #FBFBFB;
+    background-color: #f9f9f9;
     border-bottom: solid 1px white;
     position: relative; }
     ul.code li::before {
@@ -283,12 +307,13 @@ ul.code {
       font-size: 16px;
       line-height: 24px;
       position: absolute;
-      width: 18px;
+      min-width: 20px;
+      padding: 0 5px;
       height: 100%;
       left: 0px;
-      background-color: #F7F7F7;
+      background-color: #f2f2f2;
       border-right: solid 1px white;
-      text-align: center;
+      text-align: right;
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
