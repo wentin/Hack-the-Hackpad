@@ -133,7 +133,7 @@ h1 {
   text-align: center;
   height: 100vh;
   padding-top: 40vh;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   box-sizing: border-box;
   position: relative; }
   h1::after {
@@ -190,8 +190,25 @@ ul, ol {
 ul li {
   list-style: disc; }
 
-ol li {
-  list-style: decimal; }
+ol {
+  padding-left: 0px;
+  counter-reset: code-number-counter; }
+  ol li {
+    counter-increment: code-number-counter;
+    list-style: none;
+    padding-left: 32px;
+    position: relative; }
+    ol li::before {
+      content: counter(code-number-counter) ". ";
+      font-family: "Fira Sans";
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 36px;
+      position: absolute;
+      width: 24px;
+      height: 100%;
+      left: 0px;
+      text-align: center; }
 
 ul.comment {
   position: relative;
@@ -239,9 +256,9 @@ ul.task {
       display: block;
       position: absolute;
       left: 0;
-      top: 4px;
-      width: 24px;
-      height: 24px;
+      top: 5px;
+      width: 22px;
+      height: 22px;
       border: solid 1px rgba(33, 33, 33, 0.4); }
     ul.taskdone li p,
     ul.task li p {
