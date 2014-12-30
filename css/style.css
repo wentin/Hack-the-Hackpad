@@ -292,7 +292,8 @@ table[style] {
     font-weight: 300 !important;
     font-size: 20px !important;
     line-height: 28px !important;
-    padding: 12px 10px 8px 10px !important; }
+    padding: 12px 10px 8px 10px !important;
+    margin-top: 0px; }
 
 ul.task + ul.task,
 ul.task + ul.taskdone,
