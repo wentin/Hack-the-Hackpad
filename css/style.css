@@ -301,7 +301,7 @@ ul.taskdone + ul.task,
 ul.taskdone + ul.taskdone,
 p + ul:not(.comment),
 p + ol,
-.heading3 + *:not(.comment),
+.heading2 + *:not(.comment),
 ul.noindent + *:not(.comment) {
   margin-top: 0px; }
 
