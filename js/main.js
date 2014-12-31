@@ -12,7 +12,9 @@ $(function(){
             var text = res.responseText;
             // then you can manipulate your text as you wish
             console.log(text);
-            text = text.replace("<p><strong>", "<p class='heading2'><strong>");
+            
+            var find = new RegExp('<p><strong>', 'g');
+            text = text.replace(find, "<p class='heading2'><strong>");
             $('article').html(text);
             // $('p strong').parent('p').addClass('heading2');
         }
