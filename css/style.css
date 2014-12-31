@@ -94,7 +94,7 @@ a {
   text-decoration: none; }
 
 img {
-  width: 100%; }
+  max-width: 100%; }
 
 header {
   width: 100%;
@@ -192,7 +192,7 @@ footer {
       content: '\e615';
       text-align: center;
       font-size: 32px;
-      line-height: 80px;
+      line-height: 82px;
       display: block;
       position: absolute;
       left: 79px;
@@ -473,7 +473,7 @@ ul.noindent + *:not(.comment) {
         width: 160px; }
         body footer .share::before {
           font-size: 24px;
-          line-height: 60px;
+          line-height: 62px;
           left: 49px;
           top: -30px;
           width: 60px;
@@ -484,7 +484,7 @@ ul.noindent + *:not(.comment) {
       height: auto;
       text-align: left;
       position: relative;
-      padding: 20px 0;
+      padding: 24px 0;
       margin-bottom: 0px;
       border-bottom: solid 1px rgba(33, 33, 33, 0.4); }
       body h1::after {
@@ -509,6 +509,9 @@ ul.noindent + *:not(.comment) {
           line-height: 32px; }
     body p {
       font-size: 20px;
+      line-height: 28px; }
+    body ol li::before {
+      font-style: 16px;
       line-height: 28px; }
     body ul.comment {
       width: 100%;

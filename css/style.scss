@@ -69,7 +69,7 @@ a {
     text-decoration: none;
 }
 img {
-    width: 100%;
+    max-width: 100%;
 }
 header {
     width: 100%;
@@ -199,7 +199,7 @@ footer {
             content: '\e615';
             text-align: center;
             font-size: 32px;
-            line-height: 80px;
+            line-height: 82px;
             display: block;
             position: absolute;
             left: 79px;
