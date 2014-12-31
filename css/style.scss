@@ -148,7 +148,7 @@ header {
             position: relative;
             display: inline-block;
             margin-left: 30px;
-            padding-left: 40px;
+            padding-left: 28px;
             color: $dark;
             transition: all 0.4s;
             &::before {
@@ -157,8 +157,7 @@ header {
                 font-style: normal;
                 position: absolute;
                 left: 0px;
-                top: -2px;
-                font-size: 30px;
+                font-size: 20px;
                 color: $darkGreen;
             }
         }
@@ -171,9 +170,11 @@ header {
         }
         .icon-github::before {
             content: '\e60b';
+            top: -2px;
         }
         .icon-edit::before {
             content: '\e611';
+            top: -2px;
         }
     }
 }

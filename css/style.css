@@ -151,7 +151,7 @@ header {
       position: relative;
       display: inline-block;
       margin-left: 30px;
-      padding-left: 40px;
+      padding-left: 28px;
       color: #212121;
       transition: all 0.4s; }
       header .menu a::before {
@@ -160,15 +160,16 @@ header {
         font-style: normal;
         position: absolute;
         left: 0px;
-        top: -2px;
-        font-size: 30px;
+        font-size: 20px;
         color: #086375; }
     header .menu a:hover::before {
       color: #1DD3B0; }
     header .menu .icon-github::before {
-      content: '\e60b'; }
+      content: '\e60b';
+      top: -2px; }
     header .menu .icon-edit::before {
-      content: '\e611'; }
+      content: '\e611';
+      top: -2px; }
 
 article {
   width: 760px;
