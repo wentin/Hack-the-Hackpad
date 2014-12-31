@@ -594,9 +594,9 @@ ul.noindent + *:not(.comment) {
         display: none; }
     body h2 {
       font-size: 24px;
-      line-height: 32px;
+      line-height: 36px;
       font-weight: 500;
-      margin-top: 36px; }
+      margin-top: 44px; }
     body h1 + h2 {
       margin-top: 24px; }
     body p.heading2 strong {
