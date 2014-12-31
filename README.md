@@ -12,3 +12,5 @@ a pad id is the 11 character identifier at the end of the pad URL.  For exampe, 
 
 example URL:
 http://wentin.github.io/Hack-the-Hackpad/#dK2se3bCFHo
+
+http://wentin.github.io/Hack-the-Hackpad/#idz7GOaiks2
