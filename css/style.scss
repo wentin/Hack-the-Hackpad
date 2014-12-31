@@ -10,7 +10,6 @@ $sourcecodepro: 'Source Code Pro';
 $icon: 'hack-the-hackpad-icon';
 $fullWidth: 760px;
 $transition: all 0.4s ease;
-
 @font-face {
     font-family: 'EB Garamond SC';
     src: url('../fonts/ebgaramond12-sc.eot');
@@ -254,13 +253,14 @@ h2 {
     margin-top: 24px;
 }
 /********** Heading 2 ***********/
-.heading2 {
+p.heading2 strong{
     font-family: $fira;
     font-size: 32px;
     line-height: 40px;
     display: block;
     padding: 16px 0;
     letter-spacing: -0.8px;
+    text-shadow: none;
 }
 /********** Heading 3 ***********/
 ul.noindent{
@@ -467,3 +467,6 @@ p + ol,
 ul.noindent + *:not(.comment) {
     margin-top: 0px;
 }
+
+@import 'mobile';
+@import 'tablet';
