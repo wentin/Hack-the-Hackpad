@@ -292,17 +292,17 @@ h2 {
     font-family: $fira;
     font-weight: 500;
     color: $dark;
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
     font-weight: 500;
     letter-spacing: -0.5px;
-    margin-top: 24px;
+    margin-top: 40px;
 }
 /********** Heading 2 ***********/
 p.heading2 strong{
     font-family: $fira;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 36px;
     display: block;
     padding: 16px 0;
     letter-spacing: -0.8px;
@@ -316,6 +316,8 @@ ul.noindent{
         padding: 16px 0;
         list-style: none;
         p {
+            font-size: 24px;
+            line-height: 36px;
             font-weight: 300;
             font-family: $fira;
         }

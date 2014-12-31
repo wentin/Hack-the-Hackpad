@@ -275,17 +275,17 @@ h2 {
   font-family: "Fira Sans";
   font-weight: 500;
   color: #212121;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 32px;
+  line-height: 40px;
   font-weight: 500;
   letter-spacing: -0.5px;
-  margin-top: 24px; }
+  margin-top: 40px; }
 
 /********** Heading 2 ***********/
 p.heading2 strong {
   font-family: "Fira Sans";
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 36px;
   display: block;
   padding: 16px 0;
   letter-spacing: -0.8px;
@@ -299,6 +299,8 @@ ul.noindent {
     padding: 16px 0;
     list-style: none; }
     ul.noindent li p {
+      font-size: 24px;
+      line-height: 36px;
       font-weight: 300;
       font-family: "Fira Sans"; }
 
@@ -591,13 +593,16 @@ ul.noindent + *:not(.comment) {
       body h1::after {
         display: none; }
     body h2 {
-      font-size: 28px;
-      line-height: 36px;
-      font-weight: 400; }
-    body p.heading2 strong {
-      font-weight: 500;
       font-size: 24px;
       line-height: 32px;
+      font-weight: 500;
+      margin-top: 36px; }
+    body h1 + h2 {
+      margin-top: 24px; }
+    body p.heading2 strong {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
       padding: 12px 0;
       letter-spacing: 0px; }
     body ul.noindent {
@@ -606,8 +611,9 @@ ul.noindent + *:not(.comment) {
         padding: 12px 0;
         list-style: none; }
         body ul.noindent li p {
-          font-size: 24px;
-          line-height: 32px; }
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 400; }
     body p {
       font-size: 20px;
       line-height: 28px; }

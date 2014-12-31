@@ -159,15 +159,19 @@ h1 {
 }
 /********** Heading 1 ***********/
 h2 {
-	font-size: 28px;
-	line-height: 36px;
-    font-weight: 400;
+	font-size: 24px;
+	line-height: 32px;
+    font-weight: 500;
+    margin-top: 36px;
+}
+h1 + h2 {
+    margin-top: 24px;
 }
 /********** Heading 2 ***********/
 p.heading2 strong{
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 32px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
     padding: 12px 0;
     letter-spacing: 0px;
 }
@@ -178,8 +182,9 @@ ul.noindent{
         padding: 12px 0;
         list-style: none;
         p {
-			font-size: 24px;
-			line-height: 32px;
+			font-size: 20px;
+			line-height: 28px;
+            font-weight: 400;
         }
     }
 }
