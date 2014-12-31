@@ -61,6 +61,12 @@ table {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+::selection {
+  background: rgba(29, 211, 176, 0.5); }
+
+::-moz-selection {
+  background: rgba(29, 211, 176, 0.5); }
+
 body {
   font-family: "EB Garamond" !important;
   font-size: 24px;
@@ -164,7 +170,36 @@ article {
   line-height: 36px; }
 
 footer {
-  height: 360px; }
+  height: 360px;
+  width: 760px;
+  margin: 0 auto; }
+  footer .share {
+    display: block;
+    position: relative;
+    top: 150px;
+    margin: 0 auto 0 auto;
+    width: 240px;
+    height: 1px;
+    background-color: rgba(33, 33, 33, 0.4);
+    cursor: pointer; }
+    footer .share::before {
+      content: '\e615';
+      text-align: center;
+      font-size: 32px;
+      line-height: 80px;
+      display: block;
+      position: absolute;
+      left: 79px;
+      top: -40px;
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      border: solid 1px rgba(33, 33, 33, 0.4);
+      background-color: white;
+      color: #212121;
+      transition: all 0.4s ease; }
+    footer .share:hover::before {
+      color: #1DD3B0; }
 
 /********** Title ***********/
 h1 {
@@ -233,15 +268,15 @@ ul, ol {
   ul li p, ol li p {
     margin-top: 0px; }
 
-ul li {
+ul {
   list-style: disc; }
 
 ol {
   padding-left: 0px;
-  counter-reset: code-number-counter; }
+  counter-reset: code-number-counter;
+  list-style: none; }
   ol li {
     counter-increment: code-number-counter;
-    list-style: none;
     padding-left: 32px;
     position: relative; }
     ol li::before {
