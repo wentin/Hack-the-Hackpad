@@ -81,6 +81,7 @@ header {
     background-color: rgba(255,255,255,0.92);
     z-index: 1;
     .logo {
+        z-index: 2;
         position: absolute;
         cursor: pointer;
         top: 21px;
@@ -135,6 +136,49 @@ header {
             }
         }
     }
+    .hamburger {
+        display: none;
+        width: 64px;
+        height: 64px;
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        i {
+            display: block;
+            width: 24px;
+            height: 3px;
+            position: absolute;
+            left: 20px;
+            top: 28px;
+            background-color: $green;
+            transition: $transition;
+            &::before {
+                content: '';
+                display: block;
+                width: 24px;
+                height: 3px;
+                position: absolute;
+                left: 0px;
+                top: -8px;
+                background-color: $green;
+                transition: $transition;
+            }
+            &::after {
+                content: '';
+                display: block;
+                width: 24px;
+                height: 3px;
+                position: absolute;
+                left: 0px;
+                top: 8px;
+                background-color: $green;
+                transition: $transition;
+            }
+        }
+
+    }
     .menu {
         font-weight: 300;
         font-size: 20px;
@@ -150,9 +194,9 @@ header {
             margin-left: 30px;
             padding-left: 28px;
             color: $dark;
-            transition: all 0.4s;
+            transition: color 0.4s;
             &::before {
-                transition: all 0.4s;
+                transition: color 0.4s;
                 font-family: $icon;
                 font-style: normal;
                 position: absolute;

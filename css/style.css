@@ -106,6 +106,7 @@ header {
   background-color: rgba(255, 255, 255, 0.92);
   z-index: 1; }
   header .logo {
+    z-index: 2;
     position: absolute;
     cursor: pointer;
     top: 21px;
@@ -138,6 +139,44 @@ header {
         opacity: 0; }
       header .logo.collapse #ackpad {
         opacity: 0; }
+  header .hamburger {
+    display: none;
+    width: 64px;
+    height: 64px;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer; }
+    header .hamburger i {
+      display: block;
+      width: 24px;
+      height: 3px;
+      position: absolute;
+      left: 20px;
+      top: 28px;
+      background-color: #1DD3B0;
+      transition: all 0.4s ease; }
+      header .hamburger i::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 3px;
+        position: absolute;
+        left: 0px;
+        top: -8px;
+        background-color: #1DD3B0;
+        transition: all 0.4s ease; }
+      header .hamburger i::after {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 3px;
+        position: absolute;
+        left: 0px;
+        top: 8px;
+        background-color: #1DD3B0;
+        transition: all 0.4s ease; }
   header .menu {
     font-weight: 300;
     font-size: 20px;
@@ -153,9 +192,9 @@ header {
       margin-left: 30px;
       padding-left: 28px;
       color: #212121;
-      transition: all 0.4s; }
+      transition: color 0.4s; }
       header .menu a::before {
-        transition: all 0.4s;
+        transition: color 0.4s;
         font-family: "hack-the-hackpad-icon";
         font-style: normal;
         position: absolute;
@@ -461,8 +500,65 @@ ul.noindent + *:not(.comment) {
           opacity: 0; }
         body header .logo #ackpad {
           opacity: 0; }
+      body header .hamburger {
+        display: block; }
       body header .menu {
         display: none; }
+      body header.mobile-menu-open {
+        height: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px; }
+        body header.mobile-menu-open .hamburger i {
+          width: 0px; }
+          body header.mobile-menu-open .hamburger i::before {
+            top: 0;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+          body header.mobile-menu-open .hamburger i::after {
+            top: 0;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+        body header.mobile-menu-open .menu {
+          display: block;
+          opacity: 1;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+          left: 0px;
+          top: 0px;
+          padding-top: 28vh;
+          background-color: rgba(255, 255, 255, 0.8);
+          z-index: 1; }
+          body header.mobile-menu-open .menu a {
+            font-size: 28px;
+            line-height: 100px;
+            position: relative;
+            display: block;
+            margin-left: 0px;
+            padding-left: 70px;
+            transition: background-color 0.4s; }
+            body header.mobile-menu-open .menu a::before {
+              position: absolute;
+              left: 20px;
+              font-size: 30px;
+              line-height: 100px;
+              transition: none; }
+          body header.mobile-menu-open .menu a:hover,
+          body header.mobile-menu-open .menu a:active {
+            background-color: #1DD3B0;
+            color: white; }
+            body header.mobile-menu-open .menu a:hover::before,
+            body header.mobile-menu-open .menu a:active::before {
+              color: white; }
+          body header.mobile-menu-open .menu .icon-github::before {
+            top: -2px; }
+          body header.mobile-menu-open .menu .icon-edit::before {
+            top: -2px; }
     body article {
       padding: 0 20px;
       width: 100%;
