@@ -1,6 +1,7 @@
 @import 'reset';
 $green: #1DD3B0;
 $darkGreen: #086375;
+$lightGreen: #B2FF9E;
 $dark: #212121;
 $fira: 'Fira Sans';
 $ebgaramond: 'EB Garamond';
@@ -20,7 +21,6 @@ $fullWidth: 760px;
 }
 
 [class^="icon-"]::before, [class*=" icon-"]::before {
-
     font-family: $icon;
     speak: none;
     font-style: normal;
@@ -123,7 +123,7 @@ header {
         line-height: 60px;
         position: absolute;
         top: 2px;
-        right: 60px;
+        right: 53px;
         height: 60px;
         a {
             font-family: $fira;
@@ -148,6 +148,7 @@ header {
             // color: $green;
             &::before {
                 color: $green;
+                // text-shadow: 0px 0px 3px rgba($green, 0.5);
             }
         }
         .icon-github::before {
@@ -227,6 +228,9 @@ ul.noindent{
 p {
     font-family: $ebgaramond;
     margin-top: 24px;
+}
+p:empty {
+    margin-top: 0px;
 }
 ul, ol {
     padding-left: 24px;
@@ -324,6 +328,22 @@ ul.task {
             font-weight: 300;
             font-size: 20px;
         }
+    }
+}
+ul.taskdone{
+    li::before {
+        content: '\e603';
+        font-family: $icon;
+        font-size: 10px;
+        line-height: 22px;
+        text-align: center;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 }
 ul.code {

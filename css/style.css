@@ -131,7 +131,7 @@ header {
     line-height: 60px;
     position: absolute;
     top: 2px;
-    right: 60px;
+    right: 53px;
     height: 60px; }
     header .menu a {
       font-family: "Fira Sans";
@@ -224,6 +224,9 @@ p {
   font-family: "EB Garamond";
   margin-top: 24px; }
 
+p:empty {
+  margin-top: 0px; }
+
 ul, ol {
   padding-left: 24px;
   margin-top: 24px; }
@@ -306,6 +309,20 @@ ul.task {
       font-family: "Fira Sans";
       font-weight: 300;
       font-size: 20px; }
+
+ul.taskdone li::before {
+  content: '\e603';
+  font-family: "hack-the-hackpad-icon";
+  font-size: 10px;
+  line-height: 22px;
+  text-align: center;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 ul.code {
   margin-top: 24px !important;
