@@ -530,7 +530,7 @@ ul.noindent + *:not(.comment) {
       padding-left: 24px; }
       body ul.taskdone li::before,
       body ul.task li::before {
-        top: 7px;
+        top: 6px;
         width: 14px;
         height: 14px; }
       body ul.taskdone li p,
