@@ -524,7 +524,21 @@ ul.noindent + *:not(.comment) {
         list-style: none; }
         body ul.comment li p {
           font-size: 24px;
-          line-height: 32px; } }
+          line-height: 32px; }
+    body ul.taskdone li,
+    body ul.task li {
+      padding-left: 24px; }
+      body ul.taskdone li::before,
+      body ul.task li::before {
+        top: 7px;
+        width: 14px;
+        height: 14px; }
+      body ul.taskdone li p,
+      body ul.task li p {
+        font-size: 16px; }
+    body ul.taskdone li::before {
+      font-size: 8px;
+      line-height: 14px; } }
 /* iPads (portrait) ----------- */
 
 /*# sourceMappingURL=style.css.map */
