@@ -20,6 +20,7 @@ header {
 		left: -1px;
 		top: -4px;
         #bg { 
+            opacity: 0;
         }
         #Hu {
 
@@ -84,7 +85,7 @@ header {
             left: 0px;
             top: 0px;
             padding-top: 28vh;
-            background-color: rgba(255,255,255,0.8);
+            background-color: rgba(255,255,255,0.5);
             z-index: 1;
             a {
                 font-size: 28px;
@@ -118,6 +119,9 @@ header {
             }
         }
     }
+}
+header.mobile-menu-open + article {
+    margin-top: 93px;
 }
 article {
 	padding: 0 20px;
@@ -236,6 +240,11 @@ ul.taskdone{
     li::before {
         font-size: 8px;
         line-height: 14px;
+    }
+}
+ul.code {
+    li {
+        padding-left: 36px;
     }
 }
 }}
