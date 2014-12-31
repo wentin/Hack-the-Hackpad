@@ -14,7 +14,7 @@ $(function(){
             console.log(text);
             text = text.replace("<p><strong>", "<p class='heading2'><strong>");
             $('article').html(text);
-            $('p strong').parent('p').addClass('heading2');
+            // $('p strong').parent('p').addClass('heading2');
         }
     }); 
 })

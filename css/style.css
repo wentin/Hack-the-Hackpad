@@ -46,6 +46,12 @@ table {
   border-spacing: 0; }
 
 @font-face {
+  font-family: 'EB Garamond SC';
+  src: url("../fonts/ebgaramond12-sc.eot");
+  src: url("../fonts/ebgaramond12-sc.eot?#iefix") format("embedded-opentype"), url("../fonts/ebgaramond12-sc.woff2") format("woff2"), url("../fonts/ebgaramond12-sc.woff") format("woff"), url("../fonts/ebgaramond12-sc.ttf") format("truetype"), url("../fonts/ebgaramond12-sc.svg#eb_garamond12_sc_regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: 'hack-the-hackpad-icon';
   src: url("../fonts/hack-the-hackpad-icon.eot?ksq0g9");
   src: url("../fonts/hack-the-hackpad-icon.eot?#iefixksq0g9") format("embedded-opentype"), url("../fonts/hack-the-hackpad-icon.woff?ksq0g9") format("woff"), url("../fonts/hack-the-hackpad-icon.ttf?ksq0g9") format("truetype"), url("../fonts/hack-the-hackpad-icon.svg?ksq0g9#hack-the-hackpad-icon") format("svg");
@@ -196,7 +202,7 @@ footer {
       border-radius: 100%;
       border: solid 1px rgba(33, 33, 33, 0.4);
       background-color: white;
-      color: #212121;
+      color: #086375;
       transition: all 0.4s ease; }
     footer .share:hover::before {
       color: #1DD3B0; }
@@ -236,7 +242,7 @@ h2 {
   margin-top: 24px; }
 
 /********** Heading 2 ***********/
-p strong {
+.heading2 {
   font-family: "Fira Sans";
   font-size: 32px;
   line-height: 40px;
@@ -258,6 +264,13 @@ ul.noindent {
 p {
   font-family: "EB Garamond";
   margin-top: 24px; }
+
+p strong {
+  font-family: "EB Garamond SC";
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
+
+p em {
+  font-style: italic; }
 
 p:empty {
   margin-top: 0px; }
