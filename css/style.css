@@ -91,7 +91,8 @@ body {
   font-feature-settings: "kern","liga","dlig","hlig"; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #212121; }
 
 img {
   max-width: 100%; }
@@ -202,7 +203,6 @@ footer {
       border-radius: 100%;
       border: solid 1px rgba(33, 33, 33, 0.4);
       background-color: white;
-      color: #086375;
       transition: all 0.4s ease; }
     footer .share:hover::before {
       color: #1DD3B0; }
@@ -451,7 +451,7 @@ ul.noindent + *:not(.comment) {
         width: 82px;
         -webkit-transform: scale(0.75, 0.75);
         transform: scale(0.75, 0.75);
-        left: 0px;
+        left: -1px;
         top: -4px; }
         body header .logo #Hd {
           -webkit-transform: translate(-143px, 0);
@@ -510,8 +510,11 @@ ul.noindent + *:not(.comment) {
     body p {
       font-size: 20px;
       line-height: 28px; }
+    body p strong {
+      font-family: "EB Garamond SC";
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.2); }
     body ol li::before {
-      font-style: 16px;
+      font-size: 16px;
       line-height: 28px; }
     body ul.comment {
       width: 100%;

@@ -67,6 +67,7 @@ body {
 }
 a {
     text-decoration: none;
+    color: $dark;
 }
 img {
     max-width: 100%;
@@ -209,7 +210,7 @@ footer {
             border-radius: 100%;
             border: solid 1px rgba($dark, 0.4);
             background-color: white;
-            color: $darkGreen;
+            // color: $darkGreen;
             transition: $transition;
         }
         &:hover::before {

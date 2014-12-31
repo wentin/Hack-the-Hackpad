@@ -17,7 +17,7 @@ header {
 		width: 82px;
 		-webkit-transform: scale(0.75, 0.75);        
 		transform: scale(0.75, 0.75);
-		left: 0px;
+		left: -1px;
 		top: -4px;
         #bg { 
         }
@@ -111,13 +111,16 @@ p {
 	font-size: 20px;
 	line-height: 28px;
 }
-
+p strong {
+    font-family: $ebgamramondsc;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
 
 
 ol {
     li {
         &::before {
-        	font-style: 16px;
+        	font-size: 16px;
             line-height: 28px;
         }
     }
