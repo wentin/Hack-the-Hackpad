@@ -8,6 +8,7 @@ $ebgaramond: 'EB Garamond';
 $sourcecodepro: 'Source Code Pro';
 $icon: 'hack-the-hackpad-icon';
 $fullWidth: 760px;
+$transition: all 0.4s ease;
 
 @font-face {
     font-family: 'hack-the-hackpad-icon';
@@ -30,7 +31,12 @@ $fullWidth: 760px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+::selection {
+  background: rgba($green, 0.5); 
+}
+::-moz-selection {
+  background: rgba($green, 0.5);
+}
 body {
     font-family: $ebgaramond !important;
     font-size: 24px;
@@ -69,9 +75,9 @@ header {
         left: 40px;
         overflow: hidden;
         width: 325px;
-        transition: all 0.4s ease;
+        transition: $transition;
         #bg, #Hu, #Hd, #ackthe, #ackpad {
-            transition: all 0.4s ease; 
+            transition: $transition; 
         }
         #bg {
 
@@ -167,6 +173,38 @@ article {
 }
 footer {
     height: 360px;
+    width: $fullWidth;
+    margin: 0 auto;
+    .share {
+        display: block;
+        position: relative;
+        top: 150px;
+        margin: 0 auto 0 auto;
+        width: 240px;
+        height: 1px;
+        background-color: rgba($dark, 0.4);
+        cursor: pointer;
+        &::before {
+            content: '\e615';
+            text-align: center;
+            font-size: 32px;
+            line-height: 80px;
+            display: block;
+            position: absolute;
+            left: 79px;
+            top: -40px;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            border: solid 1px rgba($dark, 0.4);
+            background-color: white;
+            color: $dark;
+            transition: $transition;
+        }
+        &:hover::before {
+            color: $green;
+        }
+    }
 }
 /********** Title ***********/
 h1 {
@@ -241,15 +279,15 @@ ul, ol {
         }
     }
 }
-ul li {
+ul{
     list-style: disc;
 }
 ol {
     padding-left: 0px;
     counter-reset: code-number-counter;
+    list-style: none;
     li {
         counter-increment: code-number-counter;
-        list-style: none;
         padding-left: 32px;
         position: relative;
         &::before {
