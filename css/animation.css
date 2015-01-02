@@ -13,8 +13,8 @@
     -webkit-transition-duration: 1s;
     transition-duration: 1s; }
   body article > *:not(h1) {
-    -webkit-transform: translateY(60px);
-    transform: translateY(60px);
+    -webkit-transform: translateY(400px);
+    transform: translateY(400px);
     opacity: 0; }
   body article h1 {
     -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);

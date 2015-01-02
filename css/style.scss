@@ -91,8 +91,11 @@ body {
         }
         .linkbox {
             box-sizing: border-box;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
             display: -webkit-flex;
-            display: flex;
+            display: flex;  
             justify-content: center;
             align-items: center;
         }
@@ -341,7 +344,11 @@ header {
     }
     .button {
         cursor: pointer;
-        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;  
         justify-content: center;
         align-items: center;
         background-color: $green;
@@ -439,8 +446,11 @@ footer {
 }
 /********** Title ***********/
 h1 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
+    display: flex;     
     justify-content: center;
     align-items: center;
     width: 100%;

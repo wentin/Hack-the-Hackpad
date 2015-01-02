@@ -107,6 +107,9 @@ body {
     display: inline-block; }
   body.homepage .linkbox {
     box-sizing: border-box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     justify-content: center;
@@ -304,6 +307,10 @@ header {
       line-height: 60px; }
   .linkbox .button {
     cursor: pointer;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -389,6 +396,9 @@ footer {
 
 /********** Title ***********/
 h1 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   justify-content: center;
@@ -632,8 +642,8 @@ ul.noindent + *:not(.comment) {
     -webkit-transition-duration: 1s;
     transition-duration: 1s; }
   body article > *:not(h1) {
-    -webkit-transform: translateY(60px);
-    transform: translateY(60px);
+    -webkit-transform: translateY(400px);
+    transform: translateY(400px);
     opacity: 0; }
   body article h1 {
     -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
