@@ -7,7 +7,7 @@ body {
 font-size: 20px;
 line-height: 28px;
 &.homepage {
-    header {
+    header.mobile-menu-open {
         .menu {
             .icon-edit {
                 display: none;

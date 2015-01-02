@@ -696,9 +696,9 @@ ul.noindent + *:not(.comment) {
     /********** Heading 1 ***********/
     /********** Heading 2 ***********/
     /********** Heading 3 ***********/ }
-    body.homepage header .menu .icon-edit {
+    body.homepage header.mobile-menu-open .menu .icon-edit {
       display: none; }
-    body.homepage header .menu .icon-question {
+    body.homepage header.mobile-menu-open .menu .icon-question {
       display: block; }
     body header {
       width: 100%;
