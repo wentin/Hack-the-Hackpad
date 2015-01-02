@@ -48,6 +48,19 @@ $transition: all 0.4s ease;
 ::-moz-selection {
   background: rgba($green, 0.5);
 }
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: none;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: inset 0 0 5px rgba($green, 0);
+  border: 1px solid rgba($green, 0);
+}
 body {
     font-family: $ebgaramond !important;
     font-size: 24px;
@@ -64,6 +77,35 @@ body {
     -webkit-font-feature-settings: "kern","liga","dlig","hlig";
     -ms-font-feature-settings: "kern","liga","dlig","hlig";
     font-feature-settings: "kern","liga","dlig","hlig";
+
+    &.homepage {
+        header {
+            .menu {
+                .icon-edit {
+                    display: none;
+                }
+                .icon-question {
+                    display: inline-block;
+                }
+            }
+        }
+        .linkbox {
+            box-sizing: border-box;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .trigger {
+            display: none;
+        }
+        article {
+            display: none;
+        }
+        footer {
+            display: none;
+        }
+    }
 }
 a {
     text-decoration: none;
@@ -115,6 +157,8 @@ header {
             opacity: 1;
         }
         &:hover {
+            -webkit-transition-delay: 0.25s;
+            transition-delay: 0.25s;
             #Hu {
                 fill: $darkGreen;
             }
@@ -130,11 +174,7 @@ header {
         }
         .collapse & {
             width: 82px;
-            -webkit-transition-delay: 0.25s;
-            transition-delay: 0.25s;
             #bg, #Hu, #Hd, #ackthe, #ackpad {
-                -webkit-transition-delay: 0.25s;
-                transition-delay: 0.25s;
             }
             #bg { 
             }
@@ -234,6 +274,12 @@ header {
                 // text-shadow: 0px 0px 3px rgba($green, 0.5);
             }
         }
+        .icon-edit {
+            display: inline-block;
+        }
+        .icon-question {
+            display: none;
+        }
         .icon-github::before {
             content: '\e60b';
             top: -2px;
@@ -245,6 +291,79 @@ header {
         .icon-question::before {
             content: '\e612';
             top: -2px;
+        }
+    }
+}
+.linkbox {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 65px;
+    bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: none;
+    &.focused div.input::before {
+        display: none;
+    }
+    div.input {
+        position: relative;
+        &::before {
+            content: 'Paste here Hackpad ID, for example: QmeBMIwKDtC';
+            opacity: 0.4;
+            font-family: $fira;
+            font-weight: 300;
+            font-size: 16px;
+            color: $dark;
+            line-height: 24px;
+            position: absolute;
+            display: block;
+            left: 10px;
+            top: 9px;
+        }
+        input{
+            display: block;
+            position: relative;
+            width: 360px;
+            height: 60px;
+            padding: 0 0 0 10px;
+            border: none;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(0,0,0,0);
+            font-family: $fira;
+            font-weight: 300;
+            letter-spacing: -0.8px;
+            font-size: 44px;
+            color: $dark;
+            line-height: 60px;
+        }
+    }
+    .button {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $green;
+        width: 60px;
+        height: 60px;
+        #gear-right-top,
+        #gear-left,
+        #gear-right-bottom {
+            fill: $dark;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+        }
+        &:hover {
+            #gear-right-top {
+                -webkit-animation: rotating 1s linear infinite reverse;
+            }
+            #gear-left {
+                -webkit-animation: rotating 2s linear infinite;
+            }
+            #gear-right-bottom {
+                -webkit-animation: rotating 1s linear infinite reverse;
+            }
         }
     }
 }

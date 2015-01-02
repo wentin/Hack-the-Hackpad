@@ -6,6 +6,18 @@ and (max-width: 800px) {
 body {
 font-size: 20px;
 line-height: 28px;
+&.homepage {
+    header {
+        .menu {
+            .icon-edit {
+                display: none;
+            }
+            .icon-question {
+                display: block;
+            }
+        }
+    }
+}
 header {
     width: 100%;
     height: 90px;
@@ -49,6 +61,7 @@ header {
     }
     .menu {
         display: none;
+
     }
     &.mobile-menu-open {
         height: 100%;
@@ -103,6 +116,12 @@ header {
                     transition: none;
                 }
             }
+            .icon-edit {
+                display: block;
+            }
+            .icon-question {
+                display: none;
+            }
             a:hover,
             a:active {
                 background-color: $green;
@@ -122,6 +141,23 @@ header {
 }
 header.mobile-menu-open ~ article {
     margin-top: 93px;
+}
+
+.linkbox {
+    top: 0;
+    div.input {
+        position: relative;
+        &::before {
+        }
+        input{
+            width: 220px;
+            height: 60px;
+            padding: 0 0 0 0;
+            letter-spacing: -0.5px;
+            font-size: 32px;
+            line-height: 60px;
+        }
+    }
 }
 .trigger {
     opacity: 0;

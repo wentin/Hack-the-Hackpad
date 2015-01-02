@@ -2,6 +2,15 @@
 /* Push */
 /* -------------------------- */
 
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
 @media screen 
 and (min-width : 769px) {
 body {

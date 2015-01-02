@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$green".
-        on line 12 of ./mobile.scss
+        on line 24 of ./mobile.scss
 
-7: font-size: 20px;
-8: line-height: 28px;
-9: header {
-10:     width: 100%;
-11:     height: 90px;
-12:     border-top: solid 3px $green;
-13:     border-bottom: none;
-14:     position: relative;
-15:     z-index: 1;
-16: 	.logo {
-17: 		width: 82px;
+19:     }
+20: }
+21: header {
+22:     width: 100%;
+23:     height: 90px;
+24:     border-top: solid 3px $green;
+25:     border-bottom: none;
+26:     position: relative;
+27:     z-index: 1;
+28: 	.logo {
+29: 		width: 82px;
 
 Backtrace:
-./mobile.scss:12
+./mobile.scss:24
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
@@ -97,4 +97,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$green\".\A         on line 12 of ./mobile.scss\A \A 7: font-size: 20px;\A 8: line-height: 28px;\A 9: header {\A 10:     width: 100%;\A 11:     height: 90px;\A 12:     border-top: solid 3px $green;\A 13:     border-bottom: none;\A 14:     position: relative;\A 15:     z-index: 1;\A 16: 	.logo {\A 17: 		width: 82px;"; }
+  content: "Error: Undefined variable: \"$green\".\A         on line 24 of ./mobile.scss\A \A 19:     }\A 20: }\A 21: header {\A 22:     width: 100%;\A 23:     height: 90px;\A 24:     border-top: solid 3px $green;\A 25:     border-bottom: none;\A 26:     position: relative;\A 27:     z-index: 1;\A 28: 	.logo {\A 29: 		width: 82px;"; }
