@@ -212,6 +212,8 @@ header {
         font-family: "hack-the-hackpad-icon";
         font-style: normal;
         position: absolute;
+        width: 20px;
+        text-align: right;
         left: 0px;
         font-size: 20px;
         color: #086375; }
@@ -224,6 +226,9 @@ header {
       top: -2px; }
     header .menu .icon-edit::before {
       content: '\e611';
+      top: -2px; }
+    header .menu .icon-question::before {
+      content: '\e612';
       top: -2px; }
 
 .trigger {
@@ -244,8 +249,8 @@ header {
     margin: 0 auto;
     margin-top: -20px;
     transition: all 0.4s ease;
-    border-bottom: solid 1px #212121;
-    border-right: solid 1px #212121;
+    border-bottom: solid 1px rgba(33, 33, 33, 0.4);
+    border-right: solid 1px rgba(33, 33, 33, 0.4);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
   .trigger:hover::before {

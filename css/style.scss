@@ -219,6 +219,8 @@ header {
                 font-family: $icon;
                 font-style: normal;
                 position: absolute;
+                width: 20px;
+                text-align: right;
                 left: 0px;
                 font-size: 20px;
                 color: $darkGreen;
@@ -238,6 +240,10 @@ header {
         }
         .icon-edit::before {
             content: '\e611';
+            top: -2px;
+        }
+        .icon-question::before {
+            content: '\e612';
             top: -2px;
         }
     }
@@ -260,8 +266,8 @@ header {
         margin: 0 auto;
         margin-top: -20px;
         transition: $transition;
-        border-bottom: solid 1px rgba($dark, 1);
-        border-right: solid 1px rgba($dark, 1);
+        border-bottom: solid 1px rgba($dark, 0.4);
+        border-right: solid 1px rgba($dark, 0.4);
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
     }
@@ -416,7 +422,6 @@ ol {
             position: absolute;
             height: 100%;
             left: 0px;
-
             // -webkit-user-select: none;
             // -moz-user-select: none;
             // -ms-user-select: none;
