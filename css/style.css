@@ -389,13 +389,17 @@ footer {
 
 /********** Title ***********/
 h1 {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   font-family: "Fira Sans";
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
   text-align: center;
   height: 100vh;
-  padding-top: 38.2vh;
   margin-bottom: 100px;
   box-sizing: border-box;
   position: absolute;
