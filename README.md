@@ -13,7 +13,7 @@ If you are a hackpad user, you now can use hackpad to publish blog articles! Go 
 
 > #####For example, the "how to use" article’s hackpad’s url is  `http://hackpad.com/How-to-use-HackBlog-JVgfJHOyu6O`, the padId is `JVgfJHOyu6`
 
-You can **click** the logo to go to the **homepage**, where you can paste in padId.
+You can click the **logo** to go to the **homepage**, where you can paste in padId.
 
 You can click the **pen button** on the menu to **edit** the article on hackpad. You can edit other people’s article, with their final approval for it to go live, of course. That is the beauty of hackpad!
 
