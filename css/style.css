@@ -828,7 +828,8 @@ ul.noindent + *:not(.comment) {
       height: 240px;
       width: 100%; }
       body footer .share {
-        width: 160px; }
+        width: 160px;
+        top: 120px; }
         body footer .share::before {
           font-size: 24px;
           line-height: 62px;
