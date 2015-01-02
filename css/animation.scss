@@ -33,6 +33,14 @@ body {
 }
 
 body.collapse {
+	.trigger {
+	    -webkit-transition-delay: 0s;
+	    transition-delay: 0s;
+	    -webkit-transform: translateY(-150%) scale(0.9);
+	    transform: translateY(-150%) scale(0.9);
+		opacity: 0;
+   		z-index: -1;
+	}
 	article{
 		& > *:not(h1) {
 			-webkit-transform: translateY(0);

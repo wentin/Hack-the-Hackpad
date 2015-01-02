@@ -30,6 +30,7 @@
 		<a href="https://github.com/wentin/Hack-the-Hackpad" target="_blank" class="github icon-github">Star this project</a>
 	</div>
 </header>
+<div class="trigger"></div>
 <article>
 	
 </article>
@@ -108,7 +109,7 @@
 					noscroll, 
 					isAnimating,
 					container = document.body,
-					trigger = container.querySelector( 'h1' );
+					trigger = container.querySelector( '.trigger' );
 
 				function scrollY() {
 					return window.pageYOffset || docElem.scrollTop;
@@ -182,7 +183,7 @@
 					}
 
 					window.addEventListener( 'scroll', scrollPage );
-					// trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+					trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
 				}
 
 			})();

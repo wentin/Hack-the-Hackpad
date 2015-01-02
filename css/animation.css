@@ -19,6 +19,13 @@
   body article h1 + * {
     padding-top: 105px; }
 
+  body.collapse .trigger {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: translateY(-150%) scale(0.9);
+    transform: translateY(-150%) scale(0.9);
+    opacity: 0;
+    z-index: -1; }
   body.collapse article > *:not(h1) {
     -webkit-transform: translateY(0);
     transform: translateY(0);

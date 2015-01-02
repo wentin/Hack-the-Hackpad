@@ -114,13 +114,9 @@ header {
     left: 40px;
     overflow: hidden;
     width: 325px;
-    transition: all 0.6s cubic-bezier(0.7, 0, 0.3, 1);
-    -webkit-transition-delay: 0.25s;
-    transition-delay: 0.25s; }
+    transition: all 0.6s cubic-bezier(0.7, 0, 0.3, 1); }
     header .logo #bg, header .logo #Hu, header .logo #Hd, header .logo #ackthe, header .logo #ackpad {
-      transition: all 0.6s cubic-bezier(0.7, 0, 0.3, 1);
-      -webkit-transition-delay: 0.25s;
-      transition-delay: 0.25s; }
+      transition: all 0.6s cubic-bezier(0.7, 0, 0.3, 1); }
     header .logo #Hu {
       fill: #1DD3B0; }
     header .logo #Hd {
@@ -128,8 +124,6 @@ header {
       transform: translate(0, 0);
       fill: #086375; }
     header .logo #ackthe {
-      -webkit-transform: translate(0, 0);
-      transform: translate(0, 0);
       opacity: 1; }
     header .logo #ackpad {
       -webkit-transform: translate(0, 0);
@@ -139,8 +133,17 @@ header {
       fill: #086375; }
     header .logo:hover #Hd {
       fill: #1DD3B0; }
+    header .logo:hover #ackthe {
+      fill: #086375; }
+    header .logo:hover #ackpad {
+      fill: #1DD3B0; }
     .collapse header .logo {
-      width: 82px; }
+      width: 82px;
+      -webkit-transition-delay: 0.25s;
+      transition-delay: 0.25s; }
+      .collapse header .logo #bg, .collapse header .logo #Hu, .collapse header .logo #Hd, .collapse header .logo #ackthe, .collapse header .logo #ackpad {
+        -webkit-transition-delay: 0.25s;
+        transition-delay: 0.25s; }
       .collapse header .logo #Hd {
         -webkit-transform: translate(-143px, 0);
         transform: translate(-143px, 0); }
@@ -212,14 +215,42 @@ header {
         left: 0px;
         font-size: 20px;
         color: #086375; }
-    header .menu a:hover::before {
-      color: #1DD3B0; }
+    header .menu a:hover {
+      color: #086375; }
+      header .menu a:hover::before {
+        color: #1DD3B0; }
     header .menu .icon-github::before {
       content: '\e60b';
       top: -2px; }
     header .menu .icon-edit::before {
       content: '\e611';
       top: -2px; }
+
+.trigger {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 3;
+  transition: all 0.4s ease;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s; }
+  .trigger::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: -20px;
+    transition: all 0.4s ease;
+    border-bottom: solid 1px #212121;
+    border-right: solid 1px #212121;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .trigger:hover::before {
+    border-bottom: solid 1px #1dd3b0;
+    border-right: solid 1px #1dd3b0; }
 
 article {
   width: 760px;
@@ -273,7 +304,6 @@ h1 {
   position: absolute;
   top: 0px; }
   h1::after {
-    content: '';
     display: block;
     position: absolute;
     width: 240px;
@@ -507,6 +537,13 @@ ul.noindent + *:not(.comment) {
   body article h1 + * {
     padding-top: 105px; }
 
+  body.collapse .trigger {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: translateY(-150%) scale(0.9);
+    transform: translateY(-150%) scale(0.9);
+    opacity: 0;
+    z-index: -1; }
   body.collapse article > *:not(h1) {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -622,6 +659,12 @@ ul.noindent + *:not(.comment) {
             top: -2px; }
     body header.mobile-menu-open + article {
       margin-top: 93px; }
+    body .trigger {
+      opacity: 0;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+      -webkit-transform: translateY(-100%) scale(0.9);
+      transform: translateY(-100%) scale(0.9); }
     body article {
       padding: 0 20px;
       width: 100%;
@@ -653,9 +696,10 @@ ul.noindent + *:not(.comment) {
       font-size: 24px;
       line-height: 36px;
       font-weight: 500;
-      margin-top: 40px; }
-    body h1 + h2 {
-      margin-top: 24px; }
+      padding-top: 40px; }
+    body h1 + * {
+      padding-top: 24px;
+      margin-top: 0px; }
     body p.heading2 strong {
       font-weight: 700;
       font-size: 20px;
@@ -722,12 +766,17 @@ ul.noindent + *:not(.comment) {
   body ul.comment {
     width: 100%;
     margin: 40px 0 40px 0;
-    padding: 48px 0px; }
+    padding: 40px 0px; }
     body ul.comment::before {
       width: 120px;
       height: 24px; }
     body ul.comment::after {
       width: 120px;
       height: 24px; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .collapse header .logo #ackpad {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0; } }
 
 /*# sourceMappingURL=style.css.map */
