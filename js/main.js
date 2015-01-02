@@ -56,16 +56,19 @@ $(function(){
         if (inputvalue == '') {
 
             var load_url = 'http://wentin.github.io/Hack-the-Hackpad/#' + 'dK2se3bCFHo';
-            window.location.assign(load_url)
+            window.location.href = load_url;
+            window.reload();
         } else {
             var load_url = 'http://wentin.github.io/Hack-the-Hackpad/#' + inputvalue;
-        window.location.assign(load_url)
+            window.location.href = load_url;
+            window.reload();
         }
     })
     $('.question').click(function(e){
         e.preventDefault();
         var load_url = 'http://wentin.github.io/Hack-the-Hackpad/#' + 'JVgfJHOyu6O';
-        window.location.assign(load_url);
+        window.location.href = load_url;
+        window.reload();
         // window.open(load_url, "_blank");
     })
 })
