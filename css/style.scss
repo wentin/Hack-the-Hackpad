@@ -385,8 +385,8 @@ header {
         margin: 0 auto;
         margin-top: -20px;
         transition: $transition;
-        border-bottom: solid 1px rgba($dark, 0.4);
-        border-right: solid 1px rgba($dark, 0.4);
+        border-bottom: solid 1px rgba($dark, 1);
+        border-right: solid 1px rgba($dark, 1);
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
     }

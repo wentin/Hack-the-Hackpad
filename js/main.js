@@ -22,7 +22,7 @@ $(function(){
             },
             error:function(jqXHR, textStatus, errorThrown) {
                 console.log("request failed" +textStatus);
-                // var load_url = 'http://localhost:8080/';
+                // var load_url = 'http://wentin.github.io/Hack-the-Hackpad/';
                 // window.location.href = load_url;
                 // window.location.reload();
             }
@@ -55,11 +55,11 @@ $(function(){
         var inputvalue = $('.input input').val();
         if (inputvalue == '') {
 
-            var load_url = 'http://localhost:8080/#' + 'dK2se3bCFHo';
+            var load_url = 'http://wentin.github.io/Hack-the-Hackpad/#' + 'dK2se3bCFHo';
             window.location.href = load_url;
             window.location.reload();
         } else {
-            var load_url = 'http://localhost:8080/#' + inputvalue;
+            var load_url = 'http://wentin.github.io/Hack-the-Hackpad/#' + inputvalue;
             window.location.href = load_url;
             window.location.reload();
         }
