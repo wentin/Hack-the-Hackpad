@@ -23,6 +23,14 @@
     transition-duration: 1.2s; }
   body article h1 + * {
     padding-top: 105px; }
+  body footer {
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+    opacity: 0; }
 
   body.collapse .trigger {
     -webkit-transition-delay: 0s;
@@ -53,6 +61,12 @@
     transition-delay: 0.6s; }
   body.collapse article > *:nth-child(11) {
     -webkit-transition-delay: 0.7s;
-    transition-delay: 0.7s; } }
+    transition-delay: 0.7s; }
+  body.collapse footer {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.8s; } }
 
 /*# sourceMappingURL=animation.css.map */

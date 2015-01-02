@@ -39,6 +39,15 @@ body {
 			padding-top: 105px;
 		}
 	}
+	footer {
+		-webkit-transition-property: opacity, -webkit-transform;
+		transition-property: opacity, transform;
+		-webkit-transition-duration: 1s;
+		transition-duration: 1s;
+		-webkit-transform: translateY(60px);
+		transform: translateY(60px);
+		opacity: 0;
+	}
 }
 
 body.collapse {
@@ -83,6 +92,14 @@ body.collapse {
 			transition-delay: 0.7s;
 		}
 
+	}
+
+	footer {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+		-webkit-transition-delay: 0.8s;
+		transition-delay: 0.8s;
 	}
 }
 
