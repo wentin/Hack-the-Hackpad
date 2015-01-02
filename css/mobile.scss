@@ -6,7 +6,37 @@ and (max-width: 800px) {
 body {
 font-size: 20px;
 line-height: 28px;
-&.homepage {
+&.homepage {   
+    .linkbox {
+        top: 0;
+        > div.linkbox-wrapper {
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+            position: relative;
+            float: left;
+        }
+        div.input {
+            position: relative;
+            width: 100%;
+            &::before {
+                width: 200px;
+            }
+            input{
+                width: 100%;
+                height: 60px;
+                padding: 0 0 0 0;
+                letter-spacing: -0.5px;
+                font-size: 32px;
+                line-height: 60px;
+            }
+        }
+        .button {
+            position: absolute;
+            right: 20px;
+        }
+    }
     header.mobile-menu-open {
         .menu {
             .icon-edit {
@@ -145,22 +175,6 @@ header.mobile-menu-open ~ article {
     margin-top: 93px;
 }
 
-.linkbox {
-    top: 0;
-    div.input {
-        position: relative;
-        &::before {
-        }
-        input{
-            width: 220px;
-            height: 60px;
-            padding: 0 0 0 0;
-            letter-spacing: -0.5px;
-            font-size: 32px;
-            line-height: 60px;
-        }
-    }
-}
 .trigger {
     opacity: 0;
     -webkit-transition-delay: 0s;

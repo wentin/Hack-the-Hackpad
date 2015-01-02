@@ -15,7 +15,7 @@ $(function(){
             type: 'GET',
             success: function(res) {
                 var text = res.responseText;
-                
+                console.log(text);
                 var find = new RegExp('<p><strong>', 'g');
                 text = text.replace(find, "<p class='heading2'><strong>");
                 $('article').html(text);

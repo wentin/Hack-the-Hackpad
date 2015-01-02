@@ -106,14 +106,12 @@ body {
   body.homepage header .menu .icon-question {
     display: inline-block; }
   body.homepage .linkbox {
-    box-sizing: border-box;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    display: block; }
+    body.homepage .linkbox > div.linkbox-wrapper {
+      display: block;
+      width: 440px;
+      margin: 0 auto;
+      padding-top: 38.2vh; }
   body.homepage .trigger {
     display: none; }
   body.homepage article {
@@ -268,7 +266,7 @@ header {
   width: 100%;
   height: auto;
   position: absolute;
-  top: 65px;
+  top: 0;
   bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -276,7 +274,8 @@ header {
   .linkbox.focused div.input::before {
     display: none; }
   .linkbox div.input {
-    position: relative; }
+    position: relative;
+    float: left; }
     .linkbox div.input::before {
       content: 'Paste here Hackpad ID, for example: QmeBMIwKDtC';
       opacity: 0.4;
@@ -307,16 +306,13 @@ header {
       line-height: 60px; }
   .linkbox .button {
     cursor: pointer;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    float: left;
     background-color: #1DD3B0;
     width: 60px;
-    height: 60px; }
+    height: 60px;
+    box-sizing: border-box;
+    padding: 14px 13px 14px 12px; }
     .linkbox .button #gear-right-top,
     .linkbox .button #gear-left,
     .linkbox .button #gear-right-bottom {
@@ -396,22 +392,16 @@ footer {
 
 /********** Title ***********/
 h1 {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
+  height: 100vh;
+  padding-top: 38.2vh;
+  box-sizing: border-box;
   font-family: "Fira Sans";
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
   text-align: center;
-  height: 100vh;
   margin-bottom: 100px;
-  box-sizing: border-box;
   position: absolute;
   top: 0px; }
   h1::after {
@@ -706,6 +696,30 @@ ul.noindent + *:not(.comment) {
     /********** Heading 1 ***********/
     /********** Heading 2 ***********/
     /********** Heading 3 ***********/ }
+    body.homepage .linkbox {
+      top: 0; }
+      body.homepage .linkbox > div.linkbox-wrapper {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        position: relative;
+        float: left; }
+      body.homepage .linkbox div.input {
+        position: relative;
+        width: 100%; }
+        body.homepage .linkbox div.input::before {
+          width: 200px; }
+        body.homepage .linkbox div.input input {
+          width: 100%;
+          height: 60px;
+          padding: 0 0 0 0;
+          letter-spacing: -0.5px;
+          font-size: 32px;
+          line-height: 60px; }
+      body.homepage .linkbox .button {
+        position: absolute;
+        right: 20px; }
     body.homepage header.mobile-menu-open .menu .icon-edit {
       display: none; }
     body.homepage header.mobile-menu-open .menu .icon-question {
@@ -799,17 +813,6 @@ ul.noindent + *:not(.comment) {
             top: -2px; }
     body header.mobile-menu-open ~ article {
       margin-top: 93px; }
-    body .linkbox {
-      top: 0; }
-      body .linkbox div.input {
-        position: relative; }
-        body .linkbox div.input input {
-          width: 220px;
-          height: 60px;
-          padding: 0 0 0 0;
-          letter-spacing: -0.5px;
-          font-size: 32px;
-          line-height: 60px; }
     body .trigger {
       opacity: 0;
       -webkit-transition-delay: 0s;
@@ -914,7 +917,8 @@ ul.noindent + *:not(.comment) {
   body header .logo {
     left: 20px; }
   body article h1 + * {
-    padding-top: 125px; }
+    padding-top: 125px;
+    margin-top: 0px; }
   body ul.comment {
     width: 100%;
     margin: 40px 0 40px 0;
