@@ -31,3 +31,8 @@ How to use:
 
 http://wentin.github.io/Hack-the-Hackpad/#JVgfJHOyu6O
 
+Contact
+-------------------
+* Follow [@DesignJokes](http://twitter.com/DesignJokes) on Twitter
+* Email <zhangwenting111@gmail.com>
+* Visit [wentin.co](http://wentin.co)
