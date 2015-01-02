@@ -1,4 +1,4 @@
-Hack-the-Hackpad
+Hack the Hackpad
 ================
 http://wentin.github.io/Hack-the-Hackpad/
 
