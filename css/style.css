@@ -805,7 +805,8 @@ ul.noindent + *:not(.comment) {
       -webkit-transition-delay: 0s;
       transition-delay: 0s;
       -webkit-transform: translateY(-100%) scale(0.9);
-      transform: translateY(-100%) scale(0.9); }
+      transform: translateY(-100%) scale(0.9);
+      z-index: -1; }
     body article {
       padding: 0 20px;
       width: 100%;
