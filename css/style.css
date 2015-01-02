@@ -109,7 +109,7 @@ body {
     display: block; }
     body.homepage .linkbox > div.linkbox-wrapper {
       display: block;
-      width: 440px;
+      width: 420px;
       margin: 0 auto;
       padding-top: 38.2vh; }
   body.homepage .trigger {
@@ -286,14 +286,14 @@ header {
       line-height: 24px;
       position: absolute;
       display: block;
-      left: 10px;
+      left: 0px;
       top: 9px; }
     .linkbox div.input input {
       display: block;
       position: relative;
       width: 360px;
       height: 60px;
-      padding: 0 0 0 10px;
+      padding: 0 0 0 0;
       border: none;
       margin-left: auto;
       margin-right: auto;
