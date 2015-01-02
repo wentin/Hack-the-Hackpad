@@ -11,6 +11,11 @@ Go to this URL:
 a pad id is the 11 character identifier at the end of the pad URL.  For exampe, dK2se3bCFHo
 
 example URL:
+
 http://wentin.github.io/Hack-the-Hackpad/#dK2se3bCFHo
 
 http://wentin.github.io/Hack-the-Hackpad/#idz7GOaiks2
+
+How to use:
+
+http://wentin.github.io/Hack-the-Hackpad/#JVgfJHOyu6O
