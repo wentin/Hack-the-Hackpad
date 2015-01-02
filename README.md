@@ -20,7 +20,7 @@ You can click the **pen button** on the menu to **edit** the article on hackpad.
 Tricky part: sometimes you need to hit the refresh button again if browser back button or changing the url in address bar doesn’t immediately load the correct content.
 I need your approval!
 -------------------
-Yes, I am one of those people, who works for ... not money, but getting more **stars** on Github! Please show your support by staring my project!
+Yes, I am one of those people, who works for ... not money, but getting more **stars** on Github! Please show your support by staring my project! :) :) :)
 Example URL:
 -------------------
 http://wentin.github.io/Hack-the-Hackpad/#dK2se3bCFHo
