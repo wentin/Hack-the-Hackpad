@@ -767,6 +767,8 @@ ul.noindent + *:not(.comment) {
             body header.mobile-menu-open .menu a::before {
               position: absolute;
               left: 20px;
+              width: 30px;
+              text-align: center;
               font-size: 30px;
               line-height: 100px;
               transition: none; }
