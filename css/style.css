@@ -473,7 +473,7 @@ ol {
   list-style: none; }
   ol li {
     counter-increment: code-number-counter;
-    padding-left: 32px;
+    padding-left: 24px;
     position: relative; }
     ol li::before {
       content: counter(code-number-counter) ". ";
