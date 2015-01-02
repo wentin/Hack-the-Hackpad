@@ -10,8 +10,6 @@ $(function(){
         type: 'GET',
         success: function(res) {
             var text = res.responseText;
-            // then you can manipulate your text as you wish
-            console.log(text);
             
             var find = new RegExp('<p><strong>', 'g');
             text = text.replace(find, "<p class='heading2'><strong>");
@@ -27,19 +25,6 @@ $(function(){
             $('header').addClass('mobile-menu-open');
         }
     })
+    
 })
 
-
-
-$(window).on('scroll', function(event) {
- 
-    /*********** avoid fix above issue on chrome, only run when it is not firefox *****/
-    if ($(window).scrollTop() > 0) {
-        $('.logo').addClass('collapse');
-    } else {
-        $('.logo').removeClass('collapse');
-    }           
-    
-
-    
-});
