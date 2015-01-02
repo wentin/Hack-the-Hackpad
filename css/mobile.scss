@@ -120,7 +120,7 @@ header {
         }
     }
 }
-header.mobile-menu-open + article {
+header.mobile-menu-open ~ article {
     margin-top: 93px;
 }
 .trigger {

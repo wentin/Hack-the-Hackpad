@@ -657,7 +657,7 @@ ul.noindent + *:not(.comment) {
             top: -2px; }
           body header.mobile-menu-open .menu .icon-edit::before {
             top: -2px; }
-    body header.mobile-menu-open + article {
+    body header.mobile-menu-open ~ article {
       margin-top: 93px; }
     body .trigger {
       opacity: 0;
