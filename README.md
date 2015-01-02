@@ -11,7 +11,7 @@ How to use it?
 -------------------
 If you are a hackpad user, you now can use hackpad to publish blog articles! Go to your hackpad articles and just copy your padId which is the 11 character identifier at the end of the pad URL, and paste in the input box in the homepage. Click the gear button, then enjoy your article in much better reading experience!
 
-#####For example, the "how to use" article’s hackpad’s url is ``http://hackpad.com/How-to-use-HackBlog-JVgfJHOyu6O``, the padId is ``JVgfJHOyu6``
+> #####For example, the "how to use" article’s hackpad’s url is  `http://hackpad.com/How-to-use-HackBlog-JVgfJHOyu6O`, the padId is `JVgfJHOyu6`
 
 You can **click** the logo to go to the **homepage**, where you can paste in padId.
 
