@@ -2,7 +2,7 @@ Hack the Hackpad
 ================
 http://wentin.github.io/Hack-the-Hackpad/
 
-How to use guide: http://wentin.github.io/Hack-the-Hackpad/#JVgfJHOyu6O
+How to use guide (wriiten with hacpad, rendered by Hack the Hackpad: http://wentin.github.io/Hack-the-Hackpad/#JVgfJHOyu6O
 
 ``http://wentin.github.io/Hack-the-Hackpad/#`` + ``padId``
 
