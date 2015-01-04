@@ -10,7 +10,10 @@ http://wentin.github.io/Hack-the-Hackpad/#JVgfJHOyu6O
 
 What is "Hack the Hackpad"?
 -------------------
-"Hack the Hackpad" is a hack to transform hackpad to a blog CMS and make a blog rending to any hackpad article your write. 
+"Hack the Hackpad" is a hack to transform hackpad to a blog CMS and enable hackpad user to use hackpad to write and publish blog articles and provide its reader a better reading experience.
+
+Hackpad is an awesome collaborative writing platform that has many advantages. The best tip I can give you: type # and a space to make the line heading instantly; type space four times to enter code lines. Try it, if you haven't already.
+
 How to use it?
 -------------------
 If you are a hackpad user, you now can use hackpad to publish blog articles! Go to your hackpad articles and just copy your padId which is the 11 character identifier at the end of the pad URL, and paste in the input box in the homepage. Click the gear button, then enjoy your article in much better reading experience!
