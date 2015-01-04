@@ -188,7 +188,12 @@ header {
     position: absolute;
     right: 0;
     top: 0;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none; }
     header .hamburger i {
       display: block;
       width: 24px;
