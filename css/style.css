@@ -630,7 +630,7 @@ ul.noindent + *:not(.comment) {
     -webkit-transform: rotate(0deg); }
   to {
     -webkit-transform: rotate(360deg); } }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 801px) {
   body article > * {
     -webkit-transition-property: opacity, -webkit-transform;
     transition-property: opacity, transform;
