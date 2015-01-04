@@ -19,7 +19,7 @@ Hackpad is an awesome collaborative writing platform that has many advantages li
 
 How to use it?
 -------------------
-If you don’t have hackpad account, I highly encourage you to sign up. Hackpad provides an effortless way to write. Want to check it out without a hackpad account? You can click on the gear button on homepage with empty input field to see an example page containing all elements like list, quote, code lines, table, h1, h2, h3, p.
+If you don’t have hackpad account, I highly encourage you to sign up. Hackpad provides an effortless way to write. Want to check it out without a hackpad account? You can click on the gear button on homepage with empty input field to see an example page containing all elements like list, quote, code blocks, table, h1, h2, h3, p.
 
 If you are a hackpad user, you now can use hackpad to write and publish blog articles with great reading experience!
 
