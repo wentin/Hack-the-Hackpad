@@ -10,9 +10,12 @@ http://wentin.github.io/Hack-the-Hackpad/#JVgfJHOyu6O
 
 What is "Hack the Hackpad"?
 -------------------
-"Hack the Hackpad" is a hack to transform hackpad to a blog CMS and enable hackpad user to use hackpad to write and publish blog articles and provide its reader a better reading experience.
+"Hack the Hackpad" is a hack to transform hackpad to a blog CMS, and enable hackpad users to use hackpad to write and publish blog articles and provide its readers a better reading experience. 
 
-Hackpad is an awesome collaborative writing platform that has many advantages. The best tip I can give you: type # and a space to make the line heading instantly; type space four times to enter code lines. Try it, if you haven't already.
+The project is crafted by a type nerd who cares profoundly about web typography. Every design detail is brought to you with extra love and care. My goal is to make this project grow to be a competitor of blog platforms like medium. Currently it is a proof of concept hack that I put together over Christmas long holiday. More to come!
+
+Hackpad is an awesome collaborative writing platform that has many advantages like markdown syntax support: type # and a space to make a h1 instantly, ## to h2, ### to h3; type space four times to enter code snippet; type // to enter comment.
+
 
 How to use it?
 -------------------
