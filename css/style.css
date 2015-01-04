@@ -431,14 +431,15 @@ h2 {
   padding-top: 40px; }
 
 /********** Heading 2 ***********/
-p.heading2 strong {
-  font-family: "Fira Sans";
-  font-size: 24px;
-  line-height: 36px;
-  display: block;
-  padding: 16px 0;
-  letter-spacing: -0.8px;
-  text-shadow: none; }
+p.heading2 {
+  padding: 16px 0; }
+  p.heading2 strong {
+    font-family: "Fira Sans";
+    font-size: 24px;
+    line-height: 36px;
+    display: block;
+    letter-spacing: -0.8px;
+    text-shadow: none; }
 
 /********** Heading 3 ***********/
 ul.noindent {
@@ -646,7 +647,8 @@ ul.noindent + *:not(.comment) {
     -webkit-transition-duration: 1.2s;
     transition-duration: 1.2s; }
   body article h1 + * {
-    padding-top: 105px; }
+    padding-top: 105px !important;
+    margin-top: 0px; }
   body footer {
     -webkit-transition-property: opacity, -webkit-transform;
     transition-property: opacity, transform;
@@ -922,9 +924,6 @@ ul.noindent + *:not(.comment) {
     right: 20px; }
   body header .logo {
     left: 20px; }
-  body article h1 + * {
-    padding-top: 125px;
-    margin-top: 0px; }
   body ul.comment {
     width: 100%;
     margin: 40px 0 40px 0;

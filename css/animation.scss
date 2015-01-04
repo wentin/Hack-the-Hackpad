@@ -36,7 +36,8 @@ body {
 		}
 
 		h1 + * {
-			padding-top: 105px;
+			padding-top: 105px !important;
+        	margin-top: 0px;
 		}
 	}
 	footer {

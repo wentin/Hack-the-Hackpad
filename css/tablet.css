@@ -4,9 +4,6 @@
     right: 20px; }
   body header .logo {
     left: 20px; }
-  body article h1 + * {
-    padding-top: 125px;
-    margin-top: 0px; }
   body ul.comment {
     width: 100%;
     margin: 40px 0 40px 0;
