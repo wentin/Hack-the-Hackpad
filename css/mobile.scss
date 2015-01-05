@@ -230,12 +230,14 @@ h1 + * {
     margin-top: 0px;
 }
 /********** Heading 2 ***********/
-p.heading2 strong{
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 28px;
+p.heading2 {
     padding: 12px 0;
-    letter-spacing: 0px;
+    strong{
+    	font-weight: 700;
+    	font-size: 20px;
+    	line-height: 28px;
+        letter-spacing: 0px;
+    }
 }
 /********** Heading 3 ***********/
 ul.noindent{

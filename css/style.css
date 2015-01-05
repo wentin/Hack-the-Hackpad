@@ -863,12 +863,13 @@ ul.noindent + *:not(.comment) {
     body h1 + * {
       padding-top: 24px !important;
       margin-top: 0px; }
-    body p.heading2 strong {
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 28px;
-      padding: 12px 0;
-      letter-spacing: 0px; }
+    body p.heading2 {
+      padding: 12px 0; }
+      body p.heading2 strong {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0px; }
     body ul.noindent {
       padding-left: 0; }
       body ul.noindent li {
