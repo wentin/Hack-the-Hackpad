@@ -22,7 +22,7 @@
     -webkit-transition-duration: 1.2s;
     transition-duration: 1.2s; }
   body article h1 + * {
-    padding-top: 105px !important;
+    padding-top: 105px;
     margin-top: 0px; }
   body footer {
     -webkit-transition-property: opacity, -webkit-transform;
