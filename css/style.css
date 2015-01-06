@@ -460,7 +460,7 @@ p {
 
 p strong {
   font-family: "EB Garamond SC";
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3); }
 
 p em {
   font-style: italic; }
