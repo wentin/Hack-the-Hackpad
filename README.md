@@ -50,3 +50,7 @@ Contact
 * Follow [@DesignJokes](http://twitter.com/DesignJokes) on Twitter
 * Email <zhangwenting111@gmail.com>
 * Visit [wentin.co](http://wentin.co)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/wentin/hack-the-hackpad/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
