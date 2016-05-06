@@ -71,7 +71,7 @@ body.collapse {
 			-webkit-transform: translateY(-100%) scale(0.9);
 			transform: translateY(-100%) scale(0.9);
 		}
-		*:not(h1) {
+		/* *:not(h1) {
 			-webkit-transition-delay: 1.02s;
 			transition-delay: 1.02s;
 		}
@@ -91,7 +91,7 @@ body.collapse {
 		& > *:nth-child(11) {
 			-webkit-transition-delay: 0.86s;
 			transition-delay: 0.86s;
-		}
+		} */
 
 	}
 
