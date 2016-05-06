@@ -674,8 +674,8 @@ ul.noindent + *:not(.comment) {
     -webkit-transform: translateY(-100%) scale(0.9);
     transform: translateY(-100%) scale(0.9); }
   body.collapse article *:not(h1) {
-    -webkit-transition-delay: 0.98s;
-    transition-delay: 0.98s; }
+    -webkit-transition-delay: 1.02s;
+    transition-delay: 1.02s; }
   body.collapse article > *:not(h1):nth-child(8) {
     -webkit-transition-delay: 0.5s;
     transition-delay: 0.5s; }
